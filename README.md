@@ -1,1 +1,1 @@
-This is a Demo framework
+This is a Demo BDD Cucumber framework with Selenium and TestNG

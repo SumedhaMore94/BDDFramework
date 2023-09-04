@@ -19,29 +19,14 @@ public class LoginPageSteps {
 
     @When("user gets the title of the page")
     public void user_gets_the_title_of_the_page() {
-        String title = loginPage.getLoginPageTitle();
+        title = loginPage.getLoginPageTitle();
         System.out.println("Login page title is : " + title);
     }
 
     @Then("page title should be {string}")
-    public void page_title_should_be(String expectedTitleName) {
+    public void page_title_should_be(String string) {
 
-        Assert.assertTrue(title.contains(expectedTitleName));
-    }
-
-    @When("user enters username {string}")
-    public void user_enters_username(String username) {
-        loginPage.enterUserName(username);
-    }
-
-    @When("user enters password {string}")
-    public void user_enters_password(String password) {
-        loginPage.enterPassword(password);
-    }
-
-    @When("user click on login button")
-    public void user_click_on_login_button() {
-        loginPage.clickOnLogin();
+        Assert.assertTrue(title.contains(string));
     }
 
 }

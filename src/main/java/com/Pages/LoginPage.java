@@ -14,6 +14,7 @@ public class LoginPage {
     // Constructor of the page class
     public LoginPage(WebDriver driver) {
         this.driver = driver;
+        System.out.println("Hello");
     }
 
     // Page Actions
