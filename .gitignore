@@ -4,3 +4,5 @@ build
 gradle
 test-output
 test output
+ExtentPdf.pdf
+Spark.html
